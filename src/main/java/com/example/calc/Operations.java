@@ -52,7 +52,7 @@ public class Operations {
 	@PostMapping("/sub")
 	public Result postSub(@RequestBody AddRequest addRequest) {
 	
-		int sum = addRequest.getParam1() + addRequest.getParam2();
+		int sum = addRequest.getParam1() - addRequest.getParam2();
 		System.out.println("tested");
 		
 		Result result = new Result();
@@ -75,7 +75,7 @@ public class Operations {
 	}
 	@PostMapping("/postAdd")
 	public Result posta(@RequestBody AddRequest addRequest) {
-		int sum = addRequest.getParam3() - addRequest.getParam4();
+		int sum = addRequest.getParam3() + addRequest.getParam4();
 		System.out.println("tested23");
 		Result result = new Result();
 		result.setSum(sum);
