@@ -52,7 +52,7 @@ public class Operations {
 	@PostMapping("/sub")
 	public Result postSub(@RequestBody AddRequest addRequest) {
 	
-		int sum = addRequest.getParam1() - addRequest.getParam2();
+		int sum = addRequest.getParam1() + addRequest.getParam2();
 		System.out.println("tested");
 		
 		Result result = new Result();
